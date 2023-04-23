@@ -1,11 +1,8 @@
-### First update patch notes
+### Second update patch notes (hotifx)
 # Additions
-- Loading screen
-- Mobile friendly navigation bar
-- Index page visible
-- About page visible
+- New file directory links in compliance with GitHub Pages' file structure
 # Removed
-None
+- Old file directory links that referred to root directory as "/", which would return code 403 errors
 # Next steps
 - Flesh out layout of index page
 - Add javascript security
