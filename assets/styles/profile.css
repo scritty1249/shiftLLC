@@ -1,11 +1,11 @@
 /* This contains the styles for profile cards */
 .card {
     background-color: #999;
-    height: 400px;
-    min-width: 300px !important;
-    max-width: 36%;
+    height: fit-content;
+    min-width: none;
+    max-width: 300px;
     padding: 5px 20px 15px 20px;
-    margin: 50px auto 10px auto;
+    margin: 50px auto 10px auto !important;
     border-radius: 5px;
     position: relative;
     box-shadow: -3px 1px 7px #999;
@@ -18,7 +18,7 @@
     margin: 0;
     border-radius: 50%;
     -webkit-border-radius: 50%;
-    height: 200px;
+    max-width: 200px;
     display: inline-block;
     position: relative;
     left: calc(50% - (200px / 2));
