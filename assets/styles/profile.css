@@ -1,26 +1,115 @@
-/* This contains the styles for profile cards */
-.card {
+/* Vertical profile cards */
+.card-v {
     background-color: #999;
     height: fit-content;
-    min-width: none;
-    max-width: 300px;
+    width: 45%;
     padding: 5px 20px 15px 20px;
-    margin: 50px auto 10px auto !important;
     border-radius: 5px;
-    position: relative;
+    margin: auto;
     box-shadow: -3px 1px 7px #999;
     overflow: visible;
 }
 
-.card .icon {
+.card-v > p {
+    margin-top: 0.75em;
+    padding-top: 0;
+}
+
+.card-v .icon {
     overflow: hidden;
     padding: 0;
     margin: 0;
     border-radius: 50%;
     -webkit-border-radius: 50%;
-    max-width: 200px;
-    display: inline-block;
+    max-width: 30vw;
+    display: block;
     position: relative;
-    left: calc(50% - (200px / 2));
-    top: -40px;
+    top: -5vh;
+    margin: 0 auto 0 auto;
+}
+
+/* Horizontal profile cards */
+.card-h {
+    background-color: #ddd;
+    height: 15vh;
+    width: 85%;
+    padding: 5px 8px 5px 8px;
+    border-radius: 5px;
+    margin: 35px auto;
+    box-shadow: -3px 1px 7px #999;
+    overflow: hidden;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.card-h > * {
+    margin: 5px 4px 5px 4px;
+    flex: 1;
+}
+
+.card-h p , .card-h a{
+    font-size: 1em;
+    line-height: 1.1em;
+}
+
+.card-h .name {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0;
+}
+
+.card-h .icon {
+    align-self: center;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 0.5em 0 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    flex: 1;
+    max-height: 100%;
+    max-width: min-content;
+}
+
+/* Columns for profile cards */
+.card-col {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: start;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.card-col > * {
+    flex: 1;
+}
+
+.flex-center {
+    align-self: flex-end;
+    height: 100%;
+    justify-content: center;
+    align-content: space-evenly;
+}
+
+/* Font size control based on screen size */
+@media screen and (max-width: 600px) {
+    .card-h .name {
+        font-weight: bolder;
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .card-h p , .card-h a{
+        font-weight: 400;
+        font-size: 0.6em;
+        line-height: 1.5em;
+    }
 }

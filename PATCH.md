@@ -1,13 +1,14 @@
 ### Fourth update patch notes
 # Additions
-- Animated menu expansion button
-- Fixed issues with navigation bar width on mobile devices
-- Fixed issues with About Us page width on mobile devices
+- Contact Us page rough layout
+- Hyperlink styling
 # Removed
-none
+- Old profile card CSS styles (no visible change)
 # Next steps
-- Flesh out layout of index page
-- Compelete Contact and Schedule page layouts
+- Fix background image scrolling and centering in About Us page (feature...?)
+- Finalize layout of index page
 - Add javascript security
 - check for CORS issues
 - Create more button and menu CSS classes amd animations
+
+~~Compelete Contact and Schedule page layouts~~
