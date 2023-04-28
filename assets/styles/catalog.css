@@ -1,0 +1,82 @@
+/* Holds the styles for the Schedule a Course page. May be merged into profile.css file for efficiency later on. */
+.catalog {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.catalog > .course {
+    overflow: hidden;
+    margin: 15px 10px;
+    width: 20vw;
+    height: 50vh;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+/* Arrange differently for cell phones */
+@media screen and (max-width: 800px) {
+    .catalog > .course {
+        width: 60vw;
+        height: 50vh;
+    }
+}
+
+.course > * {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    border-radius: inherit;
+    -moz-border-radius: inherit;
+    -webkit-border-radius: inherit;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1em;
+}
+
+.course > img {
+    z-index: -1;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.course > .overlay {
+    padding: 5px;
+}
+
+.course > .description {
+    height: 200%;
+    position: relative;
+    align-content: end;
+    display: flex;
+    background: linear-gradient(transparent 40%, rgba(0, 0, 0, 0.6) 50%);
+    transition-duration: 0.25s;
+    flex: 1 1 auto;
+}
+
+.course > .description:hover {
+    transform: translateY(-50%);
+}
+
+.course > .description > * {
+    padding: 0 5px;
+    align-self: flex-end;
+    visibility: hidden;
+    flex: 1 1 auto;
+}
+
+.course > .description:hover > * {
+    visibility: visible;
+}
+
+.course > .description:first-child {
+    margin-top: 50%;
+}

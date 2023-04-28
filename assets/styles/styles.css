@@ -6,9 +6,22 @@ html, body {
     width: 100vw !important;
     height: 100vh;
     margin: 0;
-    padding: 50px 0 0 0;
+    padding: 0;
     overflow-x: hidden;
     background-attachment: local;
+    font-size: calc(15px + 0.390625vw);
+}
+
+/* Size font differently for cell phones */
+@media screen and (max-width: 800px) {
+    html, body {
+        font-size: 4vw;
+    }
+}
+
+body {
+    position: relative;
+    padding: 50px 0;
 }
 
 a {
@@ -29,6 +42,9 @@ a:active {
 }
 
 .content {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
     display: block;
     margin: 0;
     padding: 0;
@@ -150,7 +166,6 @@ img.bg-img-50 {
     transform: translateX(-15px) scale(1.25);
 }
 
-
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
 @media screen and (max-width: 600px) {
     .navbar a:not(.active) {display: none;}
@@ -170,10 +185,6 @@ img.bg-img-50 {
     display: block;
     text-align: left;
     }
-}
-
-@media screen and (max-width: 600px) {
-    
 }
 
 /* Loader CSS, subject to change */
