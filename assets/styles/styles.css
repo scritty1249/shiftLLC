@@ -8,6 +8,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: scroll;
     background-attachment: local;
     font-size: calc(15px + 0.390625vw);
 }
@@ -41,16 +42,22 @@ a:active {
     font-weight: bold;
 }
 
-.content {
-    width: 100%;
-    height: 100%;
-    overflow: scroll;
-    display: block;
+#content {
+    width: calc(100vw - 10px);
+    max-width: none !important;
+    height: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-content: flex-start;
+    padding: 75px 5px 3em 5px;
     margin: 0;
-    padding: 0;
 }
-.content > * {
-    margin: 0;
+
+#content > * {
+    margin: 20px auto;
 }
 
 /* Text Utilites */
@@ -102,7 +109,7 @@ img.bg-img-50 {
 }
 
 /* Navigation bar */
-.navbar {
+#navbar {
     height: 55px;
     display: flex;
     justify-content: space-between;
@@ -112,9 +119,10 @@ img.bg-img-50 {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 99;
 }
 
-.navbar::before {
+#navbar::before {
     height: 55px;
     content: '';
     position: fixed;
@@ -125,7 +133,7 @@ img.bg-img-50 {
 }
 
 /* Style the links inside the navigation bar */
-.navbar a {
+#navbar a {
     float: left;
     display: block;
     color: #222222;
@@ -139,7 +147,7 @@ img.bg-img-50 {
     transform: scale(1);
 }
 
-.navbar a > img {
+#navbar a > img {
     display: block;
     position: absolute;
     filter: grayscale(100%);
@@ -147,41 +155,41 @@ img.bg-img-50 {
 }
 
 /* Change the color of links on hover */
-.navbar a:not(.icon):hover {
+#navbar a:not(.icon):hover {
     transform: scale(1.35);
 }
 
 /* Add a color to the active/current link */
-.navbar a.active {
+#navbar a.active {
     transform: scale(1.25);
 }
 
-.navbar .icon {
+#navbar .icon {
     transition-duration: 0.25s;
     height: 20px;
     display: none;
 }
 
-.navbar a.icon:active {
+#navbar a.icon:active {
     transform: translateX(-15px) scale(1.25);
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
 @media screen and (max-width: 600px) {
-    .navbar a:not(.active) {display: none;}
-    .navbar a.icon {
+    #navbar a:not(.active) {display: none;}
+    #navbar a.icon {
         display: block;
         position: relative;
         float: right;
     }
     /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
-    .navbar.responsive a.icon {
+    #navbar.responsive a.icon {
         position: relative;
         bottom: 0;
         right: 10px;
         float: right;
     }
-    .navbar.responsive a {  
+    #navbar.responsive a {  
     display: block;
     text-align: left;
     }
@@ -331,10 +339,3 @@ img.bg-img-50 {
 .no-js h1 {
     color: #222222;
 }
-
-#content {
-    margin: 0 auto;
-    padding-bottom: 50px;
-    width: 80%;
-    max-width: 978px;
-}  
