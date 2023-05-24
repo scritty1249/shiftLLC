@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="theme-color" content="#ffffff"/>
     <link rel="stylesheet" href="/shiftLLC/assets/styles/styles.css"/>
+    <link rel="stylesheet" href="/shiftLLC/assets/styles/index.css"/>
+    <link rel="stylesheet" href="/shiftLLC/assets/styles/carousel.css"/>
     <link rel="icon" href="/shiftLLC/assets/images/placeholder_icon/favicon.ico"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="/shiftLLC/assets/js/main.js"></script>
@@ -13,15 +15,70 @@
 <body>
     <div id="loader-wrapper">
         <div id="loader"></div>
-        <-- Specific loading animation subject to change, the following loader elements may be removed -->
+        <!-- Specific loading animation subject to change, the following loader elements may be removed -->
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
     <div id="content">
-        <h1>Cras fermentum odio eu feugiat.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet sit amet. Mauris vitae ultricies leo integer malesuada nunc. Luctus venenatis lectus magna fringilla. Tellus molestie nunc non blandit massa. Velit sed ullamcorper morbi tincidunt. Molestie ac feugiat sed lectus vestibulum. Amet consectetur adipiscing elit duis tristique. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Sed viverra tellus in hac habitasse. Pellentesque habitant morbi tristique senectus et. Turpis egestas maecenas pharetra convallis posuere morbi. Quis varius quam quisque id diam. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Tempor orci eu lobortis elementum nibh. Nisi lacus sed viverra tellus. Sem et tortor consequat id. Non quam lacus suspendisse faucibus interdum posuere. Mattis nunc sed blandit libero volutpat sed. Lacus viverra vitae congue eu consequat ac.</p>
-        <p>Nibh praesent tristique magna sit amet purus gravida quis. Cursus eget nunc scelerisque viverra mauris in aliquam sem. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Mi quis hendrerit dolor magna eget est lorem ipsum. Dui accumsan sit amet nulla. Scelerisque fermentum dui faucibus in ornare quam viverra orci. Porttitor leo a diam sollicitudin tempor id eu. Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Volutpat odio facilisis mauris sit amet massa vitae. Bibendum ut tristique et egestas. Elementum integer enim neque volutpat ac tincidunt vitae. Non nisi est sit amet.</p>
-        <p>Sed libero enim sed faucibus turpis in eu mi bibendum. A arcu cursus vitae congue mauris rhoncus aenean. Elit pellentesque habitant morbi tristique senectus et netus. Dictum at tempor commodo ullamcorper a lacus. Auctor elit sed vulputate mi sit amet mauris commodo. Adipiscing vitae proin sagittis nisl rhoncus. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Turpis egestas maecenas pharetra convallis posuere morbi leo. Sapien eget mi proin sed libero enim sed. Scelerisque eu ultrices vitae auctor eu. Magna sit amet purus gravida. Iaculis at erat pellentesque adipiscing commodo elit at.</p>
+        <img id="logo" src="/shiftLLC/assets/images/placeholder.jpg"/>
+        <h1 class="text-center">Welcome to Shift-In LLC</h1>
+        <div class="section">
+            <!-- Make text wrap underneath carousel when viewing from smaller windows -->
+            <div id="carousel" class="subsection">
+                <!-- Extract carousel from BS library-->
+                <img src="/shiftLLC/assets/images/placeholder.jpg"/>
+            </div>
+            <div class="subsection">
+                <h3 style="text-decoration: underline;">What is Shift-In?</h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;At Shift-In LLC, our mission statement is to bring back the joys of driving and owning a manual stick-shift vehicle by bringing our lessons to the local car and automotive communities. By reintroducing manual clutch driving to the regular automatic-driving enthusiasts, we aim to open up our drivers' selection to other affordable and vintage vehicles when car-shopping while also deepening their connection to the community with strengthened driving knowledge.</p>
+                <p>Grow your driving skills today with Shift-In LLC stick-shift driving lessons</p>
+            </div>
+        </div>
+        <div class="section jumbotron" style="background-image: url(./shiftLLC/assets/images/placeholder.jpg);">
+            <h2>Shifting-In, To Local Events</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Join us at our booths at any local automotive events, car meets, or other upcoming community events for exclusive deals, discounts, or limited merchandise You can find more info about upcoming events below.</p>
+       </div>
+       <div class="section">
+            <div class="subsection">
+                <h3 class="text-center">Upcoming Events</h3>
+                <ul>
+                    <!-- Format list to match styling in template Google Doc -->
+                    <li>Title 1
+                        Date
+                        Link
+                    </li>
+                    <li>Title 2
+                        Date
+                        Link
+                    </li>
+                    <li>Title 3
+                        Date
+                        Link
+                    </li>
+                    <li>Title 4
+                        Date
+                        Link
+                    </li>
+                    <li>Title 5
+                        Date
+                        Link
+                    </li>
+                    <li>Title 6
+                        Date
+                        Link
+                    </li>
+                </ul>
+            </div>
+       </div>
+       <div id="contact" class="section">
+            <h1 class="text-center">Socials / Contact</h1>
+            <a href="#phone"><img src="/shiftLLC/assets/images/placeholder-nav-icon.png"/></a>
+            <a href="#email"><img src="/shiftLLC/assets/images/placeholder-nav-icon.png"/></a>
+            <a href="#instagram"><img src="/shiftLLC/assets/images/placeholder-nav-icon.png"/></a>
+            <a href="#youtube"><img src="/shiftLLC/assets/images/placeholder-nav-icon.png"/></a>
+            <a href="#facebook"><img src="/shiftLLC/assets/images/placeholder-nav-icon.png"/></a>
+            <a href="#twitter"><img src="/shiftLLC/assets/images/placeholder-nav-icon.png"/></a>
+        </div>
     </div>
     <div id="navbar">
         <a href="#home" class="active"><img alt="Home" src="/shiftLLC/assets/images/placeholder-nav-icon.png"/></a>

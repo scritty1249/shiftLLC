@@ -22,7 +22,7 @@ html, body {
 
 body {
     position: relative;
-    padding: 50px 0;
+    padding: 0 0 50px 0;
 }
 
 a {
@@ -52,17 +52,55 @@ a:active {
     justify-self: center;
     justify-items: center;
     align-content: flex-start;
-    padding: 75px 5px 3em 5px;
+    padding: 0 0 3em 0;
     margin: 0;
 }
 
-#content > * {
+#content > :first-child {
+    margin-top: 3%;
+}
+
+#content > ::not(:first-child) {
     margin: 20px auto;
 }
 
 /* Text Utilites */
 .text-center {
     text-align: center;
+}
+
+/* Layout */
+.section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    max-height: fit-content;
+    margin: 40px 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: center;
+}
+.section > .subsection {
+    position: relative;
+    padding: 0;
+    margin: 5px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    height: inherit;
+    width: min-content;
+    justify-content: center;
+    align-content: center;
+}
+
+.section:first-of-type {
+    margin: 20px;
 }
 
 /* Background images */
@@ -106,6 +144,41 @@ img.bg-img-50 {
     padding: 0;
     top: 0;
     left: 0;
+}
+
+/* Contact section */
+#contact {
+    border: 2px solid black;
+    height: fit-content;
+    width: calc(80% - 40px);
+    padding: 15px;
+    margin: 30px 0 0 0;
+    justify-content: space-around;
+}
+
+#contact > :first-child {
+    width: 80%;
+    margin: 0 10% 5% 10%;
+}
+
+#contact > a {
+    justify-content: center;
+    width: 20%;
+    margin: 5px 5%;
+    transition-duration: 0.25s;
+}
+
+#contact > a:hover {
+    transform: scale(1.2);
+}
+
+#contact > a:active {
+    transition-duration: 0.15s;
+    transform: scale(0.9);
+}
+
+#contact > a > img {
+    width: 100%;
 }
 
 /* Navigation bar */
@@ -154,14 +227,13 @@ img.bg-img-50 {
     height: 40px;
 }
 
-/* Change the color of links on hover */
 #navbar a:not(.icon):hover {
     transform: scale(1.35);
 }
 
-/* Add a color to the active/current link */
-#navbar a.active {
-    transform: scale(1.25);
+#navbar a:not(.icon):active {
+    transform: scale(1.15);
+    transition-duration: 0.15s;
 }
 
 #navbar .icon {
@@ -171,7 +243,11 @@ img.bg-img-50 {
 }
 
 #navbar a.icon:active {
-    transform: translateX(-15px) scale(1.25);
+    transform: scale(1.05);
+}
+
+#navbar a.active {
+    transform: scale(1.25);
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */

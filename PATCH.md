@@ -1,16 +1,26 @@
-### Seventh update patch notes
+### Eighth update patch notes
 # Additions
-- Buttons for adding courses
-- Response when courses are add (this is a placeholder behavior)
-- Overhauled page layout (no visible change, but allows for better support for mobile devices)
-- Javascript foundation for reaading orders (further progress may be postponed until phase 4)
+- Button animations (bouncy responsiveness)
+- Placeholder CSS for carousel
+- Contact / Socials section at the bottom of every page
+- Contact / Socials styles
+- Index page layout
+- styles that pretain to the index page
+- Filled in text for index page
+- New padding and universal page layout margins
 # Removed
-- Page block display settings
+- Placeholder index page contents
+- old individual page padding layouts
 # Next steps
-- Add button and window for actual payment (may be postponed until phase 5)
-- Finalize layout of index page
-- Add javascript security (final step)
-- check for CORS issues (may be postponed until phase 3- no need to worry about CORS vulnerability yet)
+- Create a color wheel tool that allows management to explore color themes on the website remotely
+- make carousel functional
+    - Add javascript for carousel
+- Implement new layout for contact.htm page (possibly merge contact and about pages)
+    - Fill in text
+    - Add proposed card animations
+- Tidy up
+
+~~Finalize layout of index page~~
 
 ~~Create more button and menu CSS classes amd animations~~
 

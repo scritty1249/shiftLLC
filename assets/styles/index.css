@@ -1,0 +1,28 @@
+/* This file holds the styles for the index page. */
+#logo {
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    align-self: center;
+}
+
+.jumbotron {
+    width: 80%;
+    min-height: 30vh;
+    height: fit-content;
+    padding: 0;
+    filter: grayscale(0.6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    align-self: center;
+}
+
+.jumbotron > * {
+    margin: 25px 70% 25px 10%;
+    flex: 1 1 auto;
+}
