@@ -15,7 +15,6 @@
 <body>
     <div id="loader-wrapper">
         <div id="loader"></div>
-        <!-- Specific loading animation subject to change, the following loader elements may be removed -->
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
@@ -23,10 +22,19 @@
         <img id="logo" src="/shiftLLC/assets/images/placeholder.jpg"/>
         <h1 class="text-center">Welcome to Shift-In LLC</h1>
         <div class="section">
-            <!-- Make text wrap underneath carousel when viewing from smaller windows -->
             <div id="carousel" class="subsection">
-                <!-- Extract carousel from BS library-->
-                <img src="/shiftLLC/assets/images/placeholder.jpg"/>
+                <div id="slide-buttons">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+                <div class="slide" data-slide="1" data-image-slide="/shiftLLC/assets/images/placeholder.jpg"></div>
+                <div class="slide" data-slide="2" data-image-slide="/shiftLLC/assets/images/placeholder.jpg"></div>
+                <div class="slide" data-slide="3" data-image-slide="/shiftLLC/assets/images/placeholder.jpg"></div>
+                <div class="slide" data-slide="4" data-image-slide="/shiftLLC/assets/images/placeholder.jpg"></div>
+                <div class="slide" data-slide="5" data-image-slide="/shiftLLC/assets/images/placeholder.jpg"></div>
             </div>
             <div class="subsection">
                 <h3 style="text-decoration: underline;">What is Shift-In?</h4>
@@ -39,35 +47,62 @@
             <p>&nbsp;&nbsp;&nbsp;&nbsp;Join us at our booths at any local automotive events, car meets, or other upcoming community events for exclusive deals, discounts, or limited merchandise You can find more info about upcoming events below.</p>
        </div>
        <div class="section">
-            <div class="subsection">
+            <div class="subsection" style="width: 80%; margin: 20px 0;">
                 <h3 class="text-center">Upcoming Events</h3>
-                <ul>
-                    <!-- Format list to match styling in template Google Doc -->
-                    <li>Title 1
-                        Date
-                        Link
+                <ul style="display: flex; flex-wrap: wrap; justify-content: space-around; font-size: 1.5em; text-align: center;">
+                    <li>
+                        <pre>
+Title 1
+Date
+Link
+                        </pre>
                     </li>
-                    <li>Title 2
-                        Date
-                        Link
+                    <li>
+                        <pre>
+Title 2
+Date
+Link
+                        </pre>
                     </li>
-                    <li>Title 3
-                        Date
-                        Link
+                    <li>
+                        <pre>
+Title 3
+Date
+Link
+                        </pre>
                     </li>
-                    <li>Title 4
-                        Date
-                        Link
+                    <li>
+                        <pre>
+Title 4
+Date
+Link
+                        </pre>
                     </li>
-                    <li>Title 5
-                        Date
-                        Link
+                    <li>
+                        <pre>
+Title 5
+Date
+Link
+                        </pre>
                     </li>
-                    <li>Title 6
-                        Date
-                        Link
+                    <li>
+                        <pre>
+Title 6
+Date
+Link
+                        </pre>
                     </li>
                 </ul>
+            </div>
+       </div>
+       <div class="section" style="justify-items:flex-start">
+            <div class="subsection">
+                <h2>Meet Shift-In LLC</h2>
+            </div>
+       </div>
+       <div class="section">
+            <div class="subsection">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Founded in April 2023, by member David Gibson, as a young business owner, he has always found passion in working in close proximity with the car community from washing cars, to modding his very own manual Acura TL. In doing so, he wanted to use his experience and knowledge to bring the joy he felt driving a manual clutch vehicle to the average driver or other car-enthusiasts with Shift-In LLC, a growing, community-based manual driving school.</p>
             </div>
        </div>
        <div id="contact" class="section">

@@ -26,3 +26,12 @@
     margin: 25px 70% 25px 10%;
     flex: 1 1 auto;
 }
+
+/* Arrange differently for cell phones */
+@media screen and (max-width: 800px) {
+    .jumbotron > * {
+        margin: 10px 30% 15px 5%;
+    }
+}
+
+/* Styling for Upcoming Events section */
