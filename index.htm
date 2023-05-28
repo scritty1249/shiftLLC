@@ -4,12 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="theme-color" content="#ffffff"/>
-    <link rel="stylesheet" href="/shiftLLC/assets/styles/styles.css"/>
-    <link rel="stylesheet" href="/shiftLLC/assets/styles/index.css"/>
-    <link rel="stylesheet" href="/shiftLLC/assets/styles/carousel.css"/>
+    <link type="text/css" rel="stylesheet" href="/shiftLLC/assets/styles/styles.css"/>
+    <link type="text/css" rel="stylesheet" href="/shiftLLC/assets/styles/index.css"/>
+    <link type="text/css" rel="stylesheet" href="/shiftLLC/assets/styles/carousel.css"/>
+    <link type="text/css" rel="stylesheet" href="/shiftLLC/assets/styles/profile.css" />
     <link rel="icon" href="/shiftLLC/assets/images/placeholder_icon/favicon.ico"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="/shiftLLC/assets/js/main.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/shiftLLC/assets/js/main.js"></script>
+    <script type="text/javascript" src="/shiftLLC/assets/js/testing.js"></script>
     <title>Home - Shift in LLC Demo</title>
 </head>
 <body>
@@ -37,12 +39,12 @@
                 <div class="slide" data-slide="5" data-image-slide="/shiftLLC/assets/images/placeholder.jpg"></div>
             </div>
             <div class="subsection">
-                <h3 style="text-decoration: underline;">What is Shift-In?</h4>
+                <h3 class="text-underline">What is Shift-In?</h4>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;At Shift-In LLC, our mission statement is to bring back the joys of driving and owning a manual stick-shift vehicle by bringing our lessons to the local car and automotive communities. By reintroducing manual clutch driving to the regular automatic-driving enthusiasts, we aim to open up our drivers' selection to other affordable and vintage vehicles when car-shopping while also deepening their connection to the community with strengthened driving knowledge.</p>
                 <p>Grow your driving skills today with Shift-In LLC stick-shift driving lessons</p>
             </div>
         </div>
-        <div class="section jumbotron" style="background-image: url(./shiftLLC/assets/images/placeholder.jpg);">
+        <div class="section jumbotron" data-bg-image="url('./shiftLLC/assets/images/placeholder.jpg')">
             <h2>Shifting-In, To Local Events</h2>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;Join us at our booths at any local automotive events, car meets, or other upcoming community events for exclusive deals, discounts, or limited merchandise You can find more info about upcoming events below.</p>
        </div>
@@ -50,6 +52,7 @@
             <div class="subsection" style="width: 80%; margin: 20px 0;">
                 <h3 class="text-center">Upcoming Events</h3>
                 <ul style="display: flex; flex-wrap: wrap; justify-content: space-around; font-size: 1.5em; text-align: center;">
+                    <p class="dev-label">Suggested to use cards here, to maintain consistency with the rest of the page's styling</p>
                     <li>
                         <pre>
 Title 1
@@ -95,14 +98,39 @@ Link
                 </ul>
             </div>
        </div>
-       <div class="section" style="justify-items:flex-start">
+       <div class="section">
             <div class="subsection">
-                <h2>Meet Shift-In LLC</h2>
+                <h1>Meet Shift-In LLC</h1>
             </div>
        </div>
        <div class="section">
             <div class="subsection">
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;Founded in April 2023, by member David Gibson, as a young business owner, he has always found passion in working in close proximity with the car community from washing cars, to modding his very own manual Acura TL. In doing so, he wanted to use his experience and knowledge to bring the joy he felt driving a manual clutch vehicle to the average driver or other car-enthusiasts with Shift-In LLC, a growing, community-based manual driving school.</p>
+            </div>
+       </div>
+       <div class="section top-left">
+            <div class="subsection left">
+                <h2>Our Team</h2>
+            </div>
+            <div class="subsection left">
+                <div class="card-v">
+                    <img alt="David." class="icon" src="/shiftLLC/assets/images/placeholder_profile_icon.png"/>
+                    <h1 class="text-center name">David.</h1>
+                    <h4 class="text-center">Founder</h4>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Dedicated Founder and Instructor since April 2023. "I have always loved using my experience to educate others and bring these nearly forgotten skills to the car community"</p>
+                </div>
+                <div class="card-v small">
+                    <img alt="Jaylon." class="icon" src="/shiftLLC/assets/images/placeholder_profile_icon.png"/>
+                    <h1 class="text-center name">Person 2.</h1>
+                    <h4 class="text-center">Instructor</h4>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Dedicated Instructor since ___</p>
+                </div>
+                <div class="card-v small">
+                    <img alt="David." class="icon" src="/shiftLLC/assets/images/placeholder_profile_icon.png"/>
+                    <h1 class="text-center name">Person 3.</h1>
+                    <h4 class="text-center">Instructor</h4>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Dedicated Instructor since ___</p>
+                </div>
             </div>
        </div>
        <div id="contact" class="section">
@@ -120,7 +148,7 @@ Link
         <a href="/shiftLLC/pages/contact.htm"><img alt="Contact Us" src="/shiftLLC/assets/images/placeholder-nav-icon.png"/></a>
         <a href="/shiftLLC/pages/about.htm"><img alt="About Us" src="/shiftLLC/assets/images/placeholder-nav-icon.png"/></a>
         <a href="/shiftLLC/pages/order.htm"><img alt="Schedule a Course" src="/shiftLLC/assets/images/placeholder-nav-icon.png"/></a>
-        <a href="javascript:void(0);" class="icon" onclick="expandNavMenu()"><img alt="Expand menu" src="/shiftLLC/assets/images/placeholder-nav-icon.png" style="transform:rotate(45deg)"/></a>
+        <a href="javascript:void(0);" class="icon" onclick="expandNavMenu()"><img alt="Expand menu" src="/shiftLLC/assets/images/placeholder-nav-icon.png"/></a>
     </div>
 </body>
 </html>

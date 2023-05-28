@@ -3,12 +3,12 @@
     background-color: #ededed;
     height: fit-content;
     min-width: min-content;
-    width: 45%;
-    padding: 5px 10px 15px 10px;
+    width: 35%;
+    padding: 5px 30px 40px 30px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    margin: 10vh auto auto auto;
+    margin: 10vh 2% auto 2%;
     box-shadow: -3px 1px 7px #999;
     border: 2px solid black;
     overflow: visible;
@@ -17,6 +17,7 @@
 .card-v > p {
     margin-top: 0.75em;
     padding-top: 0;
+    line-height: 1em;
 }
 
 .card-v .icon {
@@ -31,6 +32,35 @@
     position: relative;
     top: -5vh;
     margin: 0 auto 0 auto;
+}
+
+.small {
+    font-size: medium;
+    padding: 5px 10px 5px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    min-width: min-content;
+    width: 25%;
+    height: min-content;
+}
+
+.small > h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card-v > p {
+    margin-top: 0.25em;
+}
+
+.small > .icon {
+    top: -3vh;
+    max-width: 10vw;
+}
+
+.small > p {
+    margin-top: 0.25em;
+    padding-top: 0;
 }
 
 /* Horizontal profile cards */
@@ -57,7 +87,8 @@
     flex: 1 1 auto;
 }
 
-.card-h p , .card-h a{
+.card-h p,
+.card-h a {
     line-height: 1.1em;
     flex: 1 1 auto !important;
 }
@@ -98,7 +129,8 @@
     align-items: flex-start;
 }
 
-.card-col, .card-col > * {
+.card-col,
+.card-col > * {
     flex: 1 1 auto;
 }
 
@@ -108,4 +140,21 @@
     height: 100%;
     justify-content: center;
     align-content: space-around;
+}
+
+.david-gradient {
+    background: linear-gradient(
+        36deg,
+        rgba(0, 0, 0, 1) 10%,
+        rgba(255, 255, 255, 1) 81%
+    );
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    content: '';
 }

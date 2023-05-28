@@ -24,7 +24,6 @@
 }
 
 #carousel > #slide-buttons {
-    z-index: 100; /* For testing only */
     position: absolute;
     top: 80%;
     left: 30%;
@@ -47,6 +46,11 @@
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
+    transition-duration: 0.35s;
+}
+
+#carousel > #slide-buttons > button:active {
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 /* Arrange differently for cell phones */

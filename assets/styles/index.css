@@ -18,7 +18,7 @@
     filter: grayscale(0.6);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0%;
+    background-position: center;
     align-self: center;
 }
 

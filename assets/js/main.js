@@ -43,6 +43,7 @@ Carousel = {
     rotateSlides: function () {
         this.$first_slide = $("#carousel").find(".slide:first");
         this.$last_slide = $("#carousel").find(".slide:last");
+        this.$first_slide.data("animation", 1);
         this.$first_slide.animate(
             { marginLeft: -this.$first_slide.width() },
             this.transition_duration,
@@ -51,6 +52,7 @@ Carousel = {
                 this.$first_slide.css({ marginLeft: 0 });
                 this.$first_slide = $("#carousel").find(".slide:first");
                 this.$last_slide = $("#carousel").find(".slide:last");
+                this.$first_slide.removeData("animation");
                 $("#carousel > #slide-buttons")
                     .find("button")
                     .css({
@@ -86,22 +88,28 @@ Carousel = {
         );
     },
     jumpToSlide: function (idx) {
-        window.clearInterval(this.slide_interval);
-        while ($("#carousel").find(".slide").eq(1).data("slide") != idx + 1) {
-            console.log(this.$first_slide.data("slide") + "...");
-            this.$last_slide.after(this.$first_slide);
-            this.$first_slide = $("#carousel").find(".slide:first");
-            this.$last_slide = $("#carousel").find(".slide:last");
-        }
-        this.$first_slide.animate(
-            { marginLeft: -this.$first_slide.width() * 2 },
-            this.transition_duration,
-            () => {
+        if (!this.$first_slide.data("animation")) {
+            window.clearInterval(this.slide_interval);
+            while (
+                $("#carousel").find(".slide").eq(1).data("slide") !=
+                idx + 1
+            ) {
                 this.$last_slide.after(this.$first_slide);
-                this.$first_slide.css({ marginLeft: 0 });
-                this.startInterval();
+                this.$first_slide = $("#carousel").find(".slide:first");
+                this.$last_slide = $("#carousel").find(".slide:last");
             }
-        );
+            this.$first_slide.data("animation", 1);
+            this.$first_slide.animate(
+                { marginLeft: -this.$first_slide.width() * 2 },
+                this.transition_duration,
+                () => {
+                    this.$last_slide.after(this.$first_slide);
+                    this.$first_slide.css({ marginLeft: 0 });
+                    this.$first_slide.removeData("animation");
+                    this.startInterval();
+                }
+            );
+        }
     },
     activate: function (interval) {
         if (this.$first_slide === null) {
