@@ -34,12 +34,26 @@
     margin: 0 auto 0 auto;
 }
 
+.card-v:not(:only-child) {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 5px 10px 15px 10px;
+}
+
+.card-v:first-child {
+    margin-left: 0 !important;
+}
+
+.card-v:last-child {
+    margin-right: 0 !important;
+}
+
 .small {
     font-size: medium;
     padding: 5px 10px 5px 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    min-width: min-content;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+    min-width: 25%;
     width: 25%;
     height: min-content;
 }
@@ -142,7 +156,21 @@
     align-content: space-around;
 }
 
-.david-gradient {
+@media screen and (max-width: 600px) {
+    .card-v > * {
+        font-size: 0.8em;
+    }
+
+    .card-v:not(.small) {
+        width: 45%;
+    }
+
+    .small {
+        width: 35%;
+    }
+}
+
+.david-gradient::before {
     background: linear-gradient(
         36deg,
         rgba(0, 0, 0, 1) 10%,

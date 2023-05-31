@@ -26,6 +26,7 @@ body {
 body {
     position: relative;
     padding: 0 0 50px 0;
+    z-index: -5;
 }
 
 a {
@@ -156,6 +157,53 @@ a:active {
     flex-direction: row !important;
     justify-content: flex-end !important;
 }
+
+/* Buttons */
+.btn-small,
+.btn-medium,
+.btn-large {
+    transition-duration: 0.25s;
+    background-color: #ddd;
+    margin: 0;
+    box-shadow: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 15px;
+    height: min-content;
+    width: min-content;
+    text-align: center;
+}
+
+.btn-small:hover,
+.btn-medium:hover,
+.btn-large:hover {
+    background-color: #fdfdfd;
+    color: black;
+}
+
+.btn-small:active,
+.btn-medium:active,
+.btn-large:active {
+    transform: scale(1.2);
+}
+
+.btn-small {
+    min-width: 55px;
+    width: 25%;
+}
+
+.btn-medium {
+    min-width: 75px;
+    width: 50%;
+}
+
+.btn-large {
+    min-width: 95px;
+    width: 75%;
+}
+
 /* Background images */
 img.bg-img-30 {
     width: 100vw;

@@ -129,7 +129,7 @@ Carousel = {
         $("#carousel > #slide-buttons")
             .find("button")
             .each((idx, e) => {
-                $(e).on("click", () => {
+                $(e).on("click touchstart", () => {
                     this.jumpToSlide(idx);
                 });
             });

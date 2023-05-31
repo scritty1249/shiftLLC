@@ -1,11 +1,9 @@
-### Tenth update patch notes
+### Eleventh update patch notes
 
 # Additions
 
--   Fixed issue with carousel not working when buttons were pressed rapidly
--   Added Our Team section on Index page
--   Added responsiveness to carousel buttons upon pressing
--   Added color wheel for testing themes on the webpage
+-   Fixed issue with carousel not loading on iOS devices
+-   Added "Book Now" button on index page
 
 # Removed
 
